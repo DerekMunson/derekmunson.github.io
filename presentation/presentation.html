@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <title>CSS Media Queries - Presentation by Derek Munson</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Presentation on CSS Media Queries for CIT 230: Web Frontend Development at Brigham Young University-Idaho.">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700" rel="stylesheet">
+    <style>
+        html {background:#143538; width:100%; height:100%; margin:0; padding:0;}
+        body {width:100%; height:100%; margin:0; padding:0; background-image:radial-gradient(circle at top right, #17556c, #071e1f); color:#fff; font-family:'Muli', Arial, sans-serif;}
+        header {width:80vw; margin:0 auto; text-align:center; font-size:3vw; font-weight:300;}
+        main {width:80vw; margin:0 auto;}
+        video {top:15vh; box-shadow: 0px 0px 80px rgba(0,0,0,0.4);}
+        h1 {padding:5%; margin:0;}
+        a {text-decoration:none; color:#19b9bf; transition: all .3s ease-in-out;}
+        a:hover {color:#176b98;}
+        ul li {padding: 6px 0;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Media Queries</h1>
+    </header>
+    <main>
+        <video width="100%" controls>
+            <source src="video/CSSMediaQueries.mp4" type="video/mp4">
+            <source src="video/CSSMediaQueries.ogg" type="video/ogg">
+            Your browser does not support HTML5 video.
+        </video>
+        <section>
+            <h3>Additional Notes/Clarifications:</h3>
+            <ul>
+                <li><strong>(1:20)</strong> More on CERN and the creation of the Internet: <a href="https://en.wikipedia.org/wiki/CERN#Computer_science" target="_blank">https://en.wikipedia.org/wiki/CERN#Computer_science</a></li>
+                <li><strong>(2:30)</strong> We had mobile devices; they just weren't that good, and using them for web browsing was a nightmare.</li>
+                <li><strong>(3:40)</strong> "Browser window" is the more correct term; more on viewports here: <a href="https://www.w3schools.com/css/css_rwd_viewport.asp" target="_blank">https://www.w3schools.com/css/css_rwd_viewport.asp</a></li>
+                <li><strong>(5:05)</strong> All of these device types were deprecated/discontinued with the switch from CSS2 to CSS3; the four discussed here (All, Print, Screen, Speech) are part of the current CSS3 spec.</li>
+                <li><strong>(6:00)</strong> The comma can be used to combine several media types, such as <em>@media screen, print</em>. The 'only' operator is not discussed because it has no effect on modern browsers: <a href="https://www.w3schools.com/cssref/css3_pr_mediaquery.asp" target="_blank">https://www.w3schools.com/cssref/css3_pr_mediaquery.asp</a></li>
+                <li><strong>(8:45)</strong> Notice that these viewport widths don't overlap; overlapping viewport widths can cause unexpected results! Also note that I could have used the <em>min-width</em> statement only and omitted the <em>max-width</em>; this would have yielded the same result, but for my own sanity, I always specify <em>max-width</em> for my own sanity.</li>
+                <li><strong>(11:25)</strong> Meant to say <em>pseudo-element</em>, not <em>pseudo-class</em>. More on those here: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Pseudo-classes_and_pseudo-elements" target="_blank">https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Pseudo-classes_and_pseudo-elements</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
