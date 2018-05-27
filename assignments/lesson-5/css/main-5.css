@@ -22,7 +22,7 @@ header h1 {
     left:9999px;
 }
 header img {
-    width:280px;
+    width:200px;
     padding:25px 25px 10px 25px;
 }
 header .subheading {
@@ -36,8 +36,11 @@ nav {
     background:#1e5269;
 }
 nav button {
-    color:#fff; 
-    padding:15px auto; 
+    display:block;
+    width:100%;
+    color:#fff;
+    background: #1e5269;
+    padding:10px 0; 
     text-align:center; 
     margin:0 auto;
 }
@@ -56,24 +59,31 @@ nav ul li a {
     color:rgba(255,255,255,0.5); 
     text-decoration:none;  
     font-size:1.1em;
-    padding:.8em;
+    padding:.2em;
 }
 nav ul li.active a {}
 nav ul li a:hover {color:rgba(255,255,255,1);}
 
-main {background:#e5e5e5}
-main h2 {font-size:2em; margin:0; padding:20px; background:#e5e5e5;}
-main figure { margin: 0; width:100%; background:#e5e5e5; }
-main figure img {width:100%;}
+main {}
+main h2 {font-size:2em; margin:0; padding:20px;}
+main figure { margin: 0; width:100%; }
+main figure img {width:100%; height:auto;}
+main figure figcaption {margin:-30px 0 -8px 20px; color:#fff;}
 main article {display:block; background:#fff; padding:0 20px;}
 main article img {width:100%; height:auto;}
 main article h3 {margin:15px 0; padding-top: 20px;}
 
-section.weather-summary {background:#e5e5e5; width:100%; padding:0px 20px;}
+.container {width:100%;}
+.lower-container {margin-top:40px; padding-top:20px;}
+.left-side, .right-side {width:100%;}
+.clearfix {clear:both;}
+
+
+section.weather-summary { width:100%; padding:0px 20px;}
 section.weather-summary h3 {margin:0;}
 
 section.forecast {clear:both; display:none;}
 
-footer {font-size: 0.8em; text-align:center;}
-footer section.contact {background:#1e5269; color:#fff; padding:20px;}
-footer section.footer-bar {display:block; background:#182254;}
+footer {text-align:center;}
+footer section.contact {background:#1e5269; color:#fff; padding:20px; font-size:0.9em;}
+footer section.footer-bar { font-size: 0.7em; display:block; color:#fff; background:#184254; padding:10px}

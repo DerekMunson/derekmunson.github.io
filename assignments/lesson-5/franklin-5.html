@@ -32,9 +32,14 @@
   </nav>
     
   <main>
-    <figure>
-        <img src="images/city-park.jpg" alt="Franklin City Park">
-    </figure>
+    <div class="container">
+    <div class="left-side">
+        <figure>
+            <img src="images/city-park.jpg" alt="Franklin City Park">
+            <figcaption>Franklin Park</figcaption>
+        </figure>
+    </div>
+    <div class="right-side">
     <h2>Franklin</h2>
     <section class="weather-summary">
         <h3>Weather Summary</h3>    
@@ -53,6 +58,10 @@
             <p>Wind Speed: 5 mph SW</p>  
         </div>           
     </section>
+    </div>
+    </div>
+      
+    <div class="clearfix"></div>
         
     <section class="forecast">
       <h3>Ten Day Forecast</h3>
@@ -70,7 +79,7 @@
             <th>Day 9</th>
             <th>Day 10</th>
           </tr>
-	</thead>
+	    </thead>
         <tbody>  
           <tr>
             <td>89&deg;F</td>
@@ -84,27 +93,35 @@
             <td>85&deg;F</td>
             <td>89&deg;F</td>
           </tr>
-	</tbody>
+	    </tbody>
       </table>
     </section>
       
+    <div class="lower-container">
     <article>
-      <h3>Franklin Breaks Record</h3>	
-      <img src="">
-      <p class="town-article">
-      </p>
-    </article>		  
+      <div class="right-side">	
+      <img src="images/heat-wave-article.jpg" width="1024" height="650">
+      </div>
+      <div class="left-side">
+      <h3>Franklin Breaks Record</h3>
+      <p class="town-article">Cities across the Clark County area set new records Friday for daytime temperatures this time of year as unseasonably warm and dry conditions continue to grip the state. Eleven locations eclipsed heat records for May 9th, including Greenville where a high of 78 degrees beat a record of 75 degrees set in 2006, the National Weather Service reported. Other Clark County towns to break previous heat records included Springfield and Oberlin.</p>
+      </div>
+    </article>
+    </div>  
   
   </main>
     
+    <div class="clearfix"></div>
+    
   <footer>
     <section class="contact">
-      Contact information placeholder
-      999.999.9999
-      123 Main St. Anytown, US 99999
+      Got questions? We've got answers!<br>
+      TruPoint Weather<br>
+      1234 Buckeye Ave.<br>
+      Franklin, OH 34567<br>
       Google Map
     </section>
-    <section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | TruPoint Weather | <span id="currentdate">Current Date Placeholder</span>
     </section>
   </footer>
 
