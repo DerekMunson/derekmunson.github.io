@@ -1,0 +1,79 @@
+* { box-sizing: border-box;}
+
+html {margin:0; padding:0;}
+
+body {
+  font-size: 16px;
+  font-family: 'Catamaran', sans-serif;
+  height:100%;
+  width:100%;
+}
+
+header, nav, main, footer {
+  max-width: 100%;
+}
+
+header {
+    background:linear-gradient(#fff, #ccc); 
+    text-align:center;
+}
+header h1 {
+    position:absolute; 
+    left:9999px;
+}
+header img {
+    width:280px;
+    padding:25px 25px 10px 25px;
+}
+header .subheading {
+    font-size:1.2em;
+    font-style:italic;
+    color:#1e5269;
+    padding:10px 0;
+}
+
+nav {
+    background:#1e5269;
+}
+nav button {
+    color:#fff; 
+    padding:15px auto; 
+    text-align:center; 
+    margin:0 auto;
+}
+nav ul {
+    display:none; 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    overflow:hidden;
+}
+nav ul li {
+    display: block;
+}
+nav ul li a {
+    display: block;
+    color:rgba(255,255,255,0.5); 
+    text-decoration:none;  
+    font-size:1.1em;
+    padding:.8em;
+}
+nav ul li.active a {}
+nav ul li a:hover {color:rgba(255,255,255,1);}
+
+main {background:#e5e5e5}
+main h2 {font-size:2em; margin:0; padding:20px; background:#e5e5e5;}
+main figure { margin: 0; width:100%; background:#e5e5e5; }
+main figure img {width:100%;}
+main article {display:block; background:#fff; padding:0 20px;}
+main article img {width:100%; height:auto;}
+main article h3 {margin:15px 0; padding-top: 20px;}
+
+section.weather-summary {background:#e5e5e5; width:100%; padding:0px 20px;}
+section.weather-summary h3 {margin:0;}
+
+section.forecast {clear:both; display:none;}
+
+footer {font-size: 0.8em; text-align:center;}
+footer section.contact {background:#1e5269; color:#fff; padding:20px;}
+footer section.footer-bar {display:block; background:#182254;}
