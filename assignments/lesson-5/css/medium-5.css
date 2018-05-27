@@ -5,16 +5,20 @@
     nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
     
     section.forecast {
-        clear:both; 
-        background:#1e5269; 
-        color:#fff; 
-        display:block;
-        margin-bottom:40px;
+      clear:both; 
+      background:#1e5269; 
+      color:#fff; 
+      display:block;
+      margin-bottom:40px;
     } 
 
     header img {
       width:280px;
       padding:25px 25px 10px 25px;
+    }
+    
+    header .subheading {
+      font-size:1em;
     }
     
     nav ul { 
@@ -28,9 +32,14 @@
     }
     
     nav ul li {
-        display: inline-block; 
-        padding:15px 0px;
+      display: inline-block; 
+      padding:15px 0px;
     }
+    
+    nav ul li a { 
+      font-size:1em;
+      padding:.2em;
+}
     
     p.town-article {padding-right:3%;}
     

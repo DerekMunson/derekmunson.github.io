@@ -26,7 +26,7 @@ header img {
     padding:25px 25px 10px 25px;
 }
 header .subheading {
-    font-size:1.2em;
+    font-size:0.8em;
     font-style:italic;
     color:#1e5269;
     padding:10px 0;
@@ -58,7 +58,7 @@ nav ul li a {
     display: block;
     color:rgba(255,255,255,0.8); 
     text-decoration:none;  
-    font-size:1.1em;
+    font-size:1em;
     padding:.2em;
 }
 nav ul li.active a {}
@@ -84,6 +84,7 @@ table {width:100%; text-align:center;}
 section.weather-summary { width:100%; padding:0px 20px;}
 section.weather-summary h3 {margin:0;}
 section.weather-summary .current {float:right; width:70px; text-align:center; margin-top:-20px;}
+section.weather-summary figure img {height:70px; width:70px;}
 
 section.forecast {clear:both; display:none;}
 
