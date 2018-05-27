@@ -9,6 +9,7 @@
         background:#1e5269; 
         color:#fff; 
         display:block;
+        margin-bottom:40px;
     } 
 
     header img {
@@ -28,7 +29,7 @@
     
     nav ul li {
         display: inline-block; 
-        padding:15px 10px;
+        padding:15px 0px;
     }
     
     .left-side {float:left; display:inline-block; width:50%;}

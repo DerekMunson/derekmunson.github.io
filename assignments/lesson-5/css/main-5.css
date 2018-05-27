@@ -56,7 +56,7 @@ nav ul li {
 }
 nav ul li a {
     display: block;
-    color:rgba(255,255,255,0.5); 
+    color:rgba(255,255,255,0.8); 
     text-decoration:none;  
     font-size:1.1em;
     padding:.2em;
@@ -74,10 +74,11 @@ main article img {width:100%; height:auto;}
 main article h3 {margin:15px 0; padding-top: 20px;}
 
 .container {width:100%;}
-.lower-container {margin-top:40px; padding-top:20px;}
+.lower-container {display:inline-block; margin-top:40px; padding-top:20px; padding-bottom:20px;}
 .left-side, .right-side {width:100%;}
 .clearfix {clear:both;}
 
+table {width:100%; text-align:center;}
 
 section.weather-summary { width:100%; padding:0px 20px;}
 section.weather-summary h3 {margin:0;}
