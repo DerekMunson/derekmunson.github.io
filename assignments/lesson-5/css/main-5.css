@@ -1,16 +1,16 @@
-* { box-sizing: border-box;}
-
-html {margin:0; padding:0;}
+* { box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
 
 body {
   font-size: 16px;
   font-family: 'Catamaran', sans-serif;
-  height:100%;
-  width:100%;
 }
 
 header, nav, main, footer {
   max-width: 100%;
+    overflow:hidden;
 }
 
 header {
@@ -19,7 +19,7 @@ header {
 }
 header h1 {
     position:absolute; 
-    left:9999px;
+    left:-9999px;
 }
 header img {
     width:200px;
@@ -66,22 +66,24 @@ nav ul li a:hover {color:rgba(255,255,255,1);}
 
 main {}
 main h2 {font-size:2em; margin:0; padding:20px;}
-main figure { margin: 0; width:100%; }
-main figure img {width:100%; height:auto;}
-main figure figcaption {margin:-30px 0 -8px 20px; color:#fff;}
+main figure figcaption {margin:-30px 0 -12px 20px; color:#fff;}
 main article {display:block; background:#fff; padding:0 20px;}
 main article img {width:100%; height:auto;}
-main article h3 {margin:15px 0; padding-top: 20px;}
+main article h3 {margin:15px 0;}
 
 .container {width:100%;}
-.lower-container {display:inline-block; margin-top:40px; padding-top:20px; padding-bottom:20px;}
+.lower-container {display:inline-block; padding-bottom:20px;}
 .left-side, .right-side {width:100%;}
+.left-side figure {}
+.left-side figure img {max-width: 100%; object-fit:fill;}
+
 .clearfix {clear:both;}
 
 table {width:100%; text-align:center;}
 
 section.weather-summary { width:100%; padding:0px 20px;}
 section.weather-summary h3 {margin:0;}
+section.weather-summary .current {float:right; width:70px; text-align:center; margin-top:-20px;}
 
 section.forecast {clear:both; display:none;}
 

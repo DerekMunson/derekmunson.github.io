@@ -32,6 +32,8 @@
         padding:15px 0px;
     }
     
+    p.town-article {padding-right:3%;}
+    
     .left-side {float:left; display:inline-block; width:50%;}
     .right-side {float:right; display:inline-block; width:50%;}
     
