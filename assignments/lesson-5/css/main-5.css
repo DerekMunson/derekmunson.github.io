@@ -4,12 +4,26 @@
 }
 
 body {
-  font-size: 16px;
-  font-family: 'Catamaran', sans-serif;
+    font-size: 1rem;
+    font-family: 'Catamaran', sans-serif;
+}
+
+
+p {margin:15px 0px;}
+
+.highlow p, .conditions p {margin:0px 0px;}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 1em 0;
+    padding: 0; 
 }
 
 header, nav, main, footer {
-  max-width: 100%;
+    max-width: 100%;
     overflow:hidden;
 }
 
@@ -37,36 +51,38 @@ nav {
 }
 nav button {
     display:block;
-    width:100%;
-    color:#fff;
+    width: 100%;
+    color: #fff;
     background: #1e5269;
-    padding:10px 0; 
-    text-align:center; 
-    margin:0 auto;
+    padding: 10px 0; 
+    text-align: center; 
+    margin: 0 auto;
+    border: transparent;
 }
 nav ul {
     display:none; 
     list-style-type: none; 
     margin: 0; 
     padding: 0; 
-    overflow:hidden;
+    overflow: hidden;
 }
 nav ul li {
     display: block;
 }
 nav ul li a {
     display: block;
-    color:rgba(255,255,255,0.8); 
+    color:rgba(255,255,255,1); 
     text-decoration:none;  
     font-size:1em;
     padding:.2em;
+    transition: all .3s ease-in-out;
 }
 nav ul li.active a {}
-nav ul li a:hover {color:rgba(255,255,255,1);}
+nav ul li a:hover {color:rgba(255,255,255,0.5);}
 
 main {}
 main h2 {font-size:2em; margin:0; padding:20px;}
-main figure figcaption {margin:-30px 0 -12px 20px; color:#fff;}
+main figure figcaption {margin:-30px 0 6px 20px; color:#fff;}
 main article {display:block; background:#fff; padding:0 20px;}
 main article img {width:100%; height:auto;}
 main article h3 {margin:15px 0;}
@@ -79,7 +95,10 @@ main article h3 {margin:15px 0;}
 
 .clearfix {clear:both;}
 
-table {width:100%; text-align:center;}
+table {width:100%; text-align:center; border-collapse: collapse;}
+tr td img {width:32px; height:auto;}
+tr th {padding:5px 0px; font-weight:300; color:#6eb8d8;}
+th, td {border-left:1px solid #236683;}
 
 section.weather-summary { width:100%; padding:0px 20px;}
 section.weather-summary h3 {margin:0;}
@@ -87,6 +106,7 @@ section.weather-summary .current {float:right; width:70px; text-align:center; ma
 section.weather-summary figure img {height:70px; width:70px;}
 
 section.forecast {clear:both; display:none;}
+section.forecast h3 {padding:10px; text-align: center; background:#8DC63F; color:#3e5819;}
 
 footer {text-align:center;}
 footer section.contact {background:#1e5269; color:#fff; padding:20px; font-size:0.9em;}
