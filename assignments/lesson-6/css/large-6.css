@@ -2,7 +2,10 @@
     
     body {
       font-size: 1.05rem;
-      font-family: 'Catamaran', sans-serif;
+      background:#ccc;
+      max-width:1024px;
+      margin:50px auto;
+      box-shadow:0 0 20px rgba(0,0,0,0.3);
     }
     
     nav ul li {

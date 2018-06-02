@@ -40,8 +40,7 @@
       height:100%;
     }
     
-    nav ul li a { 
-      font-size:1em;
+    nav ul li a {
       line-height:2em;
       padding:.8em .7em;
       margin:0;
@@ -52,7 +51,7 @@
     
     p.town-article {padding-right:3%;}
     
-    .left-side {float:left; display:inline-block; width:50%;}
-    .right-side {float:right; display:inline-block; width:50%;}
+    .left-side {display:inline-block; width:50%; height:auto;}
+    .right-side {float:right; display:inline-block; width:50%; height:auto;}
     
   }

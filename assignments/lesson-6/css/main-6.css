@@ -7,6 +7,7 @@
 body {
     font-size: 1em;
     font-family: 'Catamaran', sans-serif;
+    transition: all .5s ease-in-out;
 }
 
 
@@ -58,6 +59,9 @@ nav button {
     border: none;
     position: absolute;
     top: 35px;
+    outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
 }
 nav ul {
     list-style-type: none; 
@@ -82,7 +86,7 @@ nav ul li a:hover {background-color:rgba(0,0,0,0.25);}
 
 nav ul.hide {display:none;}
 
-main {}
+main {background:#fff;}
 main h2 {font-size:2em; margin:0; padding:20px;}
 main figure {width:100%; height:auto;}
 main figure img {width:100%; height:auto;}
@@ -101,8 +105,8 @@ main article h3 {margin:15px 0;}
 
 table {width:100%; text-align:center; border-collapse: collapse;}
 tr td img {width:32px; height:auto;}
-tr th {padding:5px 0px; font-weight:300; color:#6eb8d8;}
-th, td {border-left:1px solid #236683;}
+tr th {padding:15px 0px; font-weight:300; color:#6eb8d8;}
+th, td {border-left:1px solid #236683; padding: 0px 0px 15px 0px;}
 
 section.weather-summary { width:100%; padding:0px 20px;}
 section.weather-summary h3 {margin:0;}
