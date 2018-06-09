@@ -1,0 +1,60 @@
+@media only screen and (min-width: 37.5em) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+    
+    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+    
+    section.forecast {
+      clear:both; 
+      background:#1e5269; 
+      color:#fff; 
+      display:block;
+      margin-bottom:24px;
+      z-index:9999;
+    }
+
+    header img {
+      width:280px;
+      padding:25px 25px 10px 25px;
+    }
+    
+    header .subheading {
+      font-size:1em;
+    }
+    
+    hr {display: none;}
+    
+    nav ul {
+      list-style-type: none; 
+      margin: 0;
+      padding: 0; 
+      overflow:hidden;
+    }
+    
+    nav ul.hide {display:flex; flex-direction:row;}
+    
+    nav ul li {
+      flex:auto;
+    }
+    
+    nav ul li a {
+      display:block;
+      line-height:2em;
+      padding:.8em .7em;
+      margin:0;
+      border-top:none;
+      text-align: center;
+    }
+    
+    nav ul li a:hover {background-color:rgba(0,0,0,0.25);}
+    
+    main h2 {font-size:1.5em;}
+    
+    .upper-container {flex-flow: row nowrap;}
+    .upper-container .left-side, .upper-container .right-side, .lower-container .left-side, .lower-container .right-side {flex: 0 1 auto; width:50%;}
+    
+    section.gallerygrid {display:grid; grid-template-columns:1fr 1fr;}
+    
+    p.town-article {padding-right:3%;}
+    
+  }
