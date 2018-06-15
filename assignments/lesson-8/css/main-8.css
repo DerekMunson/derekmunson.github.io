@@ -92,6 +92,7 @@ main figure figcaption {}
 main article {display:flex; flex-flow:row-reverse wrap; background:#fff;}
 main article img {width:100%; height:auto; padding:0px 20px 10px;}
 main article h3, .town-article {padding:0px 20px;}
+main p {padding:10px 20px;}
 
 .upper-container {display:flex; flex-flow:column nowrap;}
 .upper-container figure figcaption {margin:-40px 0 10px 20px; color:#fff;}
