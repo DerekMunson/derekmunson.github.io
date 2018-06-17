@@ -53,9 +53,23 @@
                         <option value="Tornado">Tornado</option>
                   </datalist>
               </label>
-              <label class="top">Storm Severity:</label>
-		          <input type="range" id="rating" min="1" max="10" step="1" value="5" onchange="printValue('rating','severityValue')" />
-                  <input id="severityValue" type="text" size="2" />
+              <label class="top">Storm Severity: 
+                    <input type="range" id="SeverityLevel" value="5" min="1" max="10" step="1" name="storm-severity" list="markers" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+                            <datalist id="markers">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </datalist>
+                            Severity Level: <span id="SeverityValue">5</span>
+                        </label>
               <label class="top">Storm Region: 
                   <select name="region">
                       <option selected="true" disabled="disabled">Select Option...</option>
