@@ -58,7 +58,7 @@
     
     .current-weather-panels .panel {display:flex; justify-content: space-evenly;}
     .current-weather-panels .panel .leftcolumn {flex:1;}
-    .current-weather-panels .panel .rightcolumn {flex:1; padding:20px;}
+    .current-weather-panels .panel .rightcolumn {flex:1;}
     
     section.grid {display:grid; grid-template-columns:1fr 1fr;}
     section.homegrid {display:flex;}

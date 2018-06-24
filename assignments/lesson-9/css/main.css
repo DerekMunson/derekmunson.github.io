@@ -142,7 +142,7 @@ section.grid .griditem img {display:block; width:100%; padding:0px 0px; transiti
 
 section.homegrid {display:flex-inline;}
 section.homegrid .homegriditem {flex:1; padding:0px;}
-section.homegrid .homegriditem aside figure {padding:0 15px;width:90px; height:auto;}
+section.homegrid .homegriditem aside figure {padding:0 8px; margin:20px 10px 0px; width:90px; height:auto;}
 section.homegrid .homegriditem figure {height:100%; width:100%; position:relative;}
 section.homegrid .homegriditem figure .currentTemp {position:absolute; top:5%; right:4%; text-align:right; color:#fff; font-size:3.5em; font-weight:300;}
 section.homegrid .homegriditem h3 {font-size:1.2em; padding:1px 0 20px; text-transform: capitalize;}
