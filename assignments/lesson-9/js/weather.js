@@ -15,7 +15,9 @@ weatherRequest.onload = function () {
     document.getElementById('humidity').innerHTML = weatherData.main.humidity;
     document.getElementById('windSpeed').innerHTML = weatherData.wind.speed.toFixed(0);
     document.getElementById('windDirection').innerHTML = weatherData.wind.deg;
-  
+
+    
+// Set up custom icons based on description from API    
     if (weatherData.weather[0].description === "scattered clouds") {
         let imagesrc = 'images/cloudy.svg';
         document.getElementById('weatherimage').src = imagesrc;
@@ -56,18 +58,19 @@ weatherRequest.onload = function () {
         let imagesrc = 'images/snow.svg';
         document.getElementById('weatherimage').src = imagesrc;
     }
-    
-    
-//    let imagesrc = 'http://openweathermap.org/img/w/' + weatherData.weather[0].icon + '.png';
-//    document.getElementById('weatherimage').src = imagesrc;
-}
 
-// function weatherIcon() {
-//    if (weatherData.weather[0].main === "Clouds") {
-//        let imagesrc = 'images/icon-cloudy.svg';
-//        document.getElementById('weatherimage').src = imagesrc;
-//    } else if (weatherData.weather[0].main === "Sunny") {
-//        let imagesrc = 'images/icon-sunny.svg';
-//        document.getElementById('weatherimage').src = imagesrc;
-//    }
-// }
+// Determine wind chill factor
+    
+    var wcTemp = weatherData.main.temp.toFixed(0);
+    var s = parseFloat(document.getElementById("windSpeed").innerHTML);
+    var t = wcTemp / 2;
+
+    var wcf = 35.74 + 0.6215 * t - 35.75 * Math.pow(s,0.16) + 0.4275 * t * Math.pow(s,0.16);
+    
+    if (weatherData.main.temp > 45) {
+        document.getElementById("WCF").innerHTML = "<em>(Not Available above 45&deg;F)</em>";
+    } else {
+        document.getElementById("WCF").innerHTML = wcf.toFixed(0);
+    }
+
+}
