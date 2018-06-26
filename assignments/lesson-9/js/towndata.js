@@ -24,7 +24,47 @@ weatherRequest.onload = function () {
     document.getElementById('city3-founded').innerHTML = weatherData.towns[3].yearFounded;
     document.getElementById('city3-population').innerHTML = weatherData.towns[3].currentPopulation;
     document.getElementById('city3-rainfall').innerHTML = weatherData.towns[3].averageRainfall;
+
+// Pulls events list for Franklin
+    var franklinEvents = weatherData.towns[0].events;
     
-    let imagesrc = 'http://openweathermap.org/img/w/' + weatherData.weather[0].icon + '.png';
-    document.getElementById('weatherimage').src = imagesrc;
+    var ul = document.createElement('ul');
+
+    document.getElementById('franklin-events').appendChild(ul);
+
+    franklinEvents.forEach(function (eventList) {
+        var li = document.createElement('li');
+        ul.appendChild(li);
+
+        li.innerHTML += eventList;
+    });
+    
+// Pulls events list for Greenville
+    var greenvilleEvents = weatherData.towns[1].events;
+    
+    var ul = document.createElement('ul');
+
+    document.getElementById('greenville-events').appendChild(ul);
+
+    greenvilleEvents.forEach(function (eventList) {
+        var li = document.createElement('li');
+        ul.appendChild(li);
+
+        li.innerHTML += eventList;
+    });
+    
+// Pulls events list for Springfield
+    var springfieldEvents = weatherData.towns[3].events;
+    
+    var ul = document.createElement('ul');
+
+    document.getElementById('springfield-events').appendChild(ul);
+
+    springfieldEvents.forEach(function (eventList) {
+        var li = document.createElement('li');
+        ul.appendChild(li);
+
+        li.innerHTML += eventList;
+    });
+    
 }
