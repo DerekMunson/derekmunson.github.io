@@ -103,7 +103,7 @@ main p {padding:10px 20px;}
 .current-weather-panels .panel .rightcolumn {flex:100%;}
 .current-weather-panels .panel .rightcolumn aside {padding:20px;}
 
-
+.city-data ul li {margin-left:20px;}
 
 .upper-container {display:flex; flex-flow:column nowrap;}
 .upper-container figure figcaption {margin:-40px 0 10px 20px; color:#fff;}
