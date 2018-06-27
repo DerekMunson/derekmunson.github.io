@@ -95,13 +95,15 @@ main article img {width:100%; height:auto; padding:0px 20px 10px;}
 main article h3, .town-article {padding:0px 20px;}
 main p {padding:10px 20px;}
 
-.current-weather-panels {padding:30px 30px 5px 30px; background:#f1f1f1;}
-.current-weather-panels:last-child {padding:30px 30px 30px 30px;}
-.current-weather-panels .panel {display:flex-inline; background:#fff; box-shadow:0 0 10px rgba(0,0,0,0.3);}
+.current-weather-panels {padding:20px 30px 20px 30px; background:#f1f1f1;}
+.current-weather-panels:last-child {padding:20px 30px 30px 30px;}
+.current-weather-panels .panel {display:flex-inline; background:#fff; box-shadow:0 0 10px rgba(0,0,0,0.2); transition: all .3s ease-in-out;}
+.current-weather-panels .panel:hover {box-shadow:0 0px 30px rgba(0,0,0,0.3); cursor:pointer;}
 .current-weather-panels .panel .leftcolumn {flex:100%; min-height:200px;}
 .current-weather-panels .panel .leftcolumn img {width:100%; height:100%; object-fit:cover;}
 .current-weather-panels .panel .rightcolumn {flex:100%;}
 .current-weather-panels .panel .rightcolumn aside {padding:20px;}
+.current-weather-panels a.city-panel {text-decoration: none; color:inherit;}
 
 .city-data ul li {margin-left:20px;}
 
