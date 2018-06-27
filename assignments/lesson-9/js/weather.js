@@ -14,7 +14,7 @@ weatherRequest.onload = function () {
     
     document.getElementById('humidity').innerHTML = weatherData.main.humidity;
     document.getElementById('windSpeed').innerHTML = weatherData.wind.speed.toFixed(0);
-    document.getElementById('windDirection').innerHTML = weatherData.wind.deg;
+    document.getElementById('windDirection').innerHTML = weatherData.wind.deg.toFixed(0);
 
     
 // Set up custom icons based on description from API    
