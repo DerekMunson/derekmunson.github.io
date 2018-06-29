@@ -1,0 +1,171 @@
+
+* { box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-size: 1em;
+    font-family: 'Catamaran', sans-serif;
+    transition: all .5s ease-in-out;
+}
+
+
+p {margin:15px 0px;}
+
+.highlow p, .conditions p {margin:0px 0px;}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+header, nav, main, footer {
+    max-width: 100%;
+    overflow:hidden;
+}
+
+header {
+    background:linear-gradient(#fff, #ccc); 
+    text-align:center;
+}
+header h1 {
+    position:absolute; 
+    left:-9999px;
+}
+header img {
+    width:250px;
+    padding:25px 25px 0px 25px;
+}
+header .subheading {
+    font-size:0.8em;
+    font-style:italic;
+    color:#1e5269;
+    padding:10px 0;
+}
+
+nav {
+    background:#1e5269;
+}
+nav button {
+    color: #1E5269;
+    background: transparent;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    border: none;
+    position: absolute;
+    top: 35px;
+    outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
+}
+nav ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden;
+}
+nav ul li {}
+nav ul li a {
+    display: block;
+    color:rgba(255,255,255,1); 
+    text-decoration:none;  
+    font-size:1em;
+    padding:.75em 1.2em;
+    transition: all .3s ease-in-out;
+    border-top:1px solid rgba(0,0,0,0.2);
+}
+nav ul li.active a {background-color: rgba(0,0,0,0.2);}
+nav ul li a:hover {background-color:rgba(0,0,0,0.2);}
+
+nav ul.hide {display:none;}
+
+main {background:#fff;}
+main h2 {font-size:2em; line-height:0.9em; margin:0; padding:20px 20px 0 20px; color:#154255;}
+main h3 {font-size:1.5em; line-height:0.9em; margin:0; color:#236683;}
+main figure {}
+main figure img {}
+main figure figcaption {}
+main article {display:flex; flex-flow:row-reverse wrap; background:#fff;}
+main article img {width:100%; height:auto; padding:0px 20px 10px;}
+main article h3, .town-article {padding:0px 20px;}
+main p {padding:10px 20px;}
+
+.current-weather-panels {padding:20px 30px 20px 30px; background:#f1f1f1;}
+.current-weather-panels:last-child {padding:20px 30px 30px 30px;}
+.current-weather-panels .panel {display:flex-inline; background:#fff; box-shadow:0 0 10px rgba(0,0,0,0.2); transition: all .3s ease-in-out;}
+.current-weather-panels .panel:hover {box-shadow:0 0px 30px rgba(0,0,0,0.3); cursor:pointer;}
+.current-weather-panels .panel .leftcolumn {flex:100%; min-height:200px;}
+.current-weather-panels .panel .leftcolumn img {width:100%; height:100%; object-fit:cover;}
+.current-weather-panels .panel .rightcolumn {flex:100%;}
+.current-weather-panels .panel .rightcolumn aside {padding:20px;}
+.current-weather-panels a.city-panel {text-decoration: none; color:inherit;}
+
+.city-data ul li {margin-left:20px;}
+
+.upper-container {display:flex; flex-flow:column nowrap;}
+.upper-container figure figcaption {margin:-40px 0 10px 20px; color:#fff;}
+.lower-container {}
+.left-side, .right-side {}
+.left-side figure {overflow:hidden;}
+.left-side figure img {}
+
+.upper-container .left-side img {background:#900; max-height:450px; background-size: cover; background-position: center center; overflow:hidden;}
+
+.clearfix {clear:both;}
+
+table {width:100%; text-align:center; border-collapse: collapse;}
+tr td img {width:32px; height:auto;}
+tr th {padding:15px 0px; font-weight:300; color:#6eb8d8;}
+th, td {border-left:1px solid #236683; padding: 0px 0px 15px 0px;}
+
+section.weather-summary {display:flex; flex-flow:row nowrap; padding:0px 20px;}
+section.weather-summary aside {flex:auto;}
+section.weather-summary h3 {margin:0;}
+section.weather-summary figure img {height:90px; width:90px; text-align: right;}
+
+section.forecast {clear:both; display:none;}
+section.forecast h3 {padding:10px; text-align: center; background:#8DC63F; color:#3e5819;}
+
+section.tenday ul {display:flex; flex-flow:row wrap; justify-content: space-between; align-items: center;}
+section.tenday ul li {flex:auto; align-self: stretch; list-style-type: none; text-align: center;padding:10px; border-left:1px solid #0d6890;}
+section.tenday img {width:40px; padding:5px;}
+section.tenday ul li .date {color:#6eb8d8;}
+
+section.grid {display:grid; grid-template-columns:1fr; margin:10px;}
+section.grid .griditem {display:block; padding:10px;}
+section.grid .griditem figure {background:#fff; padding:15px 15px 0 15px; transition: all .5s ease-in-out; box-shadow:0 2px 10px rgba(0,0,0,0.3);}
+section.grid .griditem figcaption {padding:10px 0; font-style:italic; color:#555; font-size:14px;}
+section.grid .griditem img {display:block; width:100%; padding:0px 0px; transition: all .5s ease-in-out;}
+
+section.homegrid {display:flex-inline;}
+section.homegrid .homegriditem {flex:1; padding:0px;}
+section.homegrid .homegriditem aside figure {padding:0 8px; margin:20px 10px 0px; width:90px; height:auto;}
+section.homegrid .homegriditem figure {height:100%; width:100%; position:relative;}
+section.homegrid .homegriditem figure .currentTemp {position:absolute; top:5%; right:4%; text-align:right; color:#fff; font-size:3.5em; font-weight:300;}
+section.homegrid .homegriditem h3 {font-size:1.2em; padding:1px 0 20px; text-transform: capitalize;}
+section.homegrid .homegriditem figure img {width:100%; height:100%; object-fit: cover;}
+section.homegrid .homegriditem figcaption {margin-top:-40px; padding:10px; font-style:italic; color:#fff; font-size:12px;}
+
+form {padding:0px 20px 20px 20px; margin: 0 auto;}
+form fieldset {padding:20px; margin:15px 0px; border:2px solid #236683; border-radius:10px; background:#f6f6f6;}
+form legend {color:#fff; font-size:24px; font-weight:400; padding:8px 14px; background:#236683; border-radius:4px;}
+form label.top, form div {display:block; padding:10px 0; font-weight:700;}
+form label.top input, form label.top select {display:block; padding:8px; width:100%; max-width:30rem; background:rgba(0,0,0,0.1); border-width:0px; border:none; border-radius:4px;}
+form label.sidebyside {display:block; padding:10px 0;}
+form textarea {display:block; width:100%; max-width:30rem;}
+form input.submit {border:none; background:#669127; padding:10px 15px; border-radius:4px; color:#fff; transition: all .3s ease-in-out; width:100%; }
+form input.submit:hover {background:#8DC63F; cursor:pointer; color:#3E5819;}
+form label.top input:required {outline:none !important; border-right:5px solid #A00;}
+form label.top input:required:valid {outline:none !important; border-right:5px solid #097119;}
+.range-header {display: inline-block; width: 100%; max-width: 30rem; margin: 0 auto; padding-top: 1rem; color: #333;}
+.range-header input {display: block; color: #333; height: 1rem; width: 100%; margin-bottom: 0.25rem;}
+
+footer {text-align:center;}
+footer section.contact {background:#1e5269; color:#fff; padding:20px; font-size:0.9em;}
+footer section.footer-bar { font-size: 0.7em; display:block; color:#fff; background:#184254; padding:10px;}
+footer section.footer-bar a {color:#73cbf2;}

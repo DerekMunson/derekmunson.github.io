@@ -1,0 +1,16 @@
+@media only screen and (min-width: 64em) {
+    
+    body {
+      font-size: 1.05rem;
+      background:#ccc;
+      max-width:1024px;
+      margin:50px auto;
+      box-shadow:0 0 20px rgba(0,0,0,0.3);
+    }
+  
+    .highlow p, .conditions p {margin:10px 0px;}
+    
+    section.grid {display:grid; grid-template-columns:1fr 1fr 1fr;}
+    section.grid .griditem figure:hover {box-shadow:0 15px 30px rgba(0,0,0,0.5);}
+    
+  }
