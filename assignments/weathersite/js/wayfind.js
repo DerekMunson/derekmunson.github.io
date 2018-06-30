@@ -6,7 +6,7 @@ if (pageHREF !== "") {
     var menu = document.querySelectorAll('ul#primaryNav li a');
     var i;
     
-    for(var i=0;i<menu.length;i++){
+    for(var i=0;i<menu.length;i++) {
         var currentURL = (menu[i].getAttribute("href"));
         menu[i].parentNode.className="";
         if (currentURL === pageHREF) {
