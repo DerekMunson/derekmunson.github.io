@@ -19,7 +19,17 @@
     <div class="subheading">Weather...you like it or not?</div>
   </header>
 
-  <nav includefile="nav.html"></nav>
+  <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+      <li><a href="/assignments/weathersite/index.html">Home</a></li>
+      <li><a href="/assignments/weathersite/franklin.html">Franklin</a></li>
+      <li><a href="#">Greenville</a></li>
+      <li><a href="#">Springfield</a></li>
+      <li><a href="/assignments/weathersite/stormcenter.html">Storm Center</a></li>
+      <li><a href="/assignments/weathersite/gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
     
   <main>
       <h2>Storm Center</h2>
@@ -93,6 +103,6 @@
 <script src="js/hamburger.js"></script>
 <script src="js/severity.js"></script>
 <script src="js/include.js"></script>
-<script defer src="js/wayfinder.js"></script>
+<script src="js/wayfinder.js"></script>
 </body>
 </html>

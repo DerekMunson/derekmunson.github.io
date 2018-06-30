@@ -7,6 +7,7 @@ weatherRequest.send();
 weatherRequest.onload = function () {
     let weatherData = JSON.parse(weatherRequest.responseText);
     // console.log(weatherData);
+    
     document.getElementById('city1-name').innerHTML = weatherData.towns[0].name;
     document.getElementById('city1-motto').innerHTML = weatherData.towns[0].motto;
     document.getElementById('city1-founded').innerHTML = weatherData.towns[0].yearFounded;

@@ -80,7 +80,7 @@ nav ul li a {
     border-top:1px solid rgba(0,0,0,0.2);
 }
 nav ul li.active a {background-color: rgba(0,0,0,0.2);}
-nav ul li a:hover {background-color:rgba(0,0,0,0.2);}
+nav ul li a:hover {background-color:rgba(255,255,255,0.15);}
 
 nav ul.hide {display:none;}
 
@@ -90,12 +90,13 @@ main h3 {font-size:1.5em; line-height:0.9em; margin:0; color:#236683;}
 main figure {}
 main figure img {}
 main figure figcaption {}
-main article {display:flex; flex-flow:row-reverse wrap; background:#fff;}
+main article {background:#fff;}
+main article.city-article {display:flex; flex-flow:row-reverse wrap;}
 main article img {width:100%; height:auto; padding:0px 20px 10px;}
 main article h3, .town-article {padding:0px 20px;}
 main p {padding:10px 20px;}
 
-.current-weather-panels {padding:20px 30px 20px 30px; background:#f1f1f1;}
+.current-weather-panels {padding:20px 30px 20px 30px; margin:20px; background:#ffff;}
 .current-weather-panels:last-child {padding:20px 30px 30px 30px;}
 .current-weather-panels .panel {display:flex-inline; background:#fff; box-shadow:0 0 10px rgba(0,0,0,0.2); transition: all .3s ease-in-out;}
 .current-weather-panels .panel:hover {box-shadow:0 0px 30px rgba(0,0,0,0.3); cursor:pointer;}
