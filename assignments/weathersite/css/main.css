@@ -96,7 +96,7 @@ main article img {width:100%; height:auto; padding:0px 20px 10px;}
 main article h3, .town-article {padding:0px 20px;}
 main p {padding:10px 20px;}
 
-.current-weather-panels {padding:20px 30px 20px 30px; margin:20px; background:#ffff;}
+.current-weather-panels {padding:20px 30px 20px 30px; background:#f1f1f1;}
 .current-weather-panels:last-child {padding:20px 30px 30px 30px;}
 .current-weather-panels .panel {display:flex-inline; background:#fff; box-shadow:0 0 10px rgba(0,0,0,0.2); transition: all .3s ease-in-out;}
 .current-weather-panels .panel:hover {box-shadow:0 0px 30px rgba(0,0,0,0.3); cursor:pointer;}
@@ -143,8 +143,7 @@ section.grid .griditem figure {background:#fff; padding:0px; transition: all .5s
 section.grid .griditem figcaption {padding:10px 10px; font-style:italic; color:#555; font-size:14px;}
 section.grid .griditem img {display:block; width:100%; padding:0px 0px; transition: all .5s ease-in-out;}
 
-section.homegrid {display:flex-inline;}
-section.homegrid .homegriditem {flex:1; padding:0px;}
+section.homegrid .homegriditem {flex:1;}
 section.homegrid .homegriditem aside figure {padding:0 8px; margin:20px 10px 0px; width:90px; height:auto;}
 section.homegrid .homegriditem figure {height:100%; width:100%; position:relative;}
 section.homegrid .homegriditem figure .currentTemp {position:absolute; top:5%; right:4%; text-align:right; color:#fff; font-size:3.5em; font-weight:300;}

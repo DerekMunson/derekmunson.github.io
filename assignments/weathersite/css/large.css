@@ -1,7 +1,6 @@
 @media only screen and (min-width: 64em) {
     
     body {
-      font-size: 1.05rem;
       background:#ccc;
       max-width:1024px;
       margin:50px auto;
