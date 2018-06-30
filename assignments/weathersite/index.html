@@ -14,7 +14,7 @@
 <body>
 
   <header>
-    <img src="images/header-logo.png" alt="TruPoint Logo">
+      <a href="index.html"><img src="images/header-logo.png" alt="TruPoint Logo"></a>
     <h1>TruPoint Weather</h1>
     <div class="subheading">Weather...you like it or not?</div>
   </header>
@@ -49,7 +49,10 @@
     <section class="current-weather-panels">
       <a href="franklin.html" class="city-panel">
       <div class="panel">
-        <div class="leftcolumn"><img src="images/franklin2.jpg" alt="Downtown Franklin"></div>
+        <div class="leftcolumn">
+            <img src="images/franklin2.jpg" alt="Downtown Franklin">
+            <div class="currentTemp"><span id="mainFranklinTemp"></span>&deg;F</div>
+        </div>
         <div class="rightcolumn">
             <aside class="city-data">
                 <h3 id="city1-name"></h3><br>
@@ -66,7 +69,10 @@
     <section class="current-weather-panels">
       <a href="greenville.html" class="city-panel">
       <div class="panel">
-        <div class="leftcolumn"><img src="images/greenville.jpg" alt="Rural Greenville"></div>
+        <div class="leftcolumn">
+            <img src="images/greenville.jpg" alt="Rural Greenville">
+            <div class="currentTemp"><span id="mainGreenvilleTemp"></span>&deg;F</div>
+        </div>
         <div class="rightcolumn">
             <aside class="city-data">
                 <h3 id="city2-name"></h3><br>
@@ -83,7 +89,10 @@
     <section class="current-weather-panels">
       <a href="springfield.html" class="city-panel">
       <div class="panel">
-        <div class="leftcolumn"><img src="images/springfield.jpg" alt="Sunset in Springfield"></div>
+        <div class="leftcolumn">
+            <img src="images/springfield.jpg" alt="Sunset in Springfield">
+            <div class="currentTemp"><span id="mainSpringfieldTemp"></span>&deg;F</div>
+        </div>
         <div class="rightcolumn">
             <aside class="city-data">
                 <h3 id="city3-name"></h3><br>
@@ -105,14 +114,14 @@
       TruPoint Weather<br>
       1234 Buckeye Ave.<br>
       Franklin, OH 34567<br>
-      Google Map
     </section>
-    <section class="footer-bar">&copy;2018 | All Rights Reserved | TruPoint Weather | <span id="currentdate">Placeholder</span>
+    <section class="footer-bar">&copy;2018 TruPoint&trade; Weather | All Rights Reserved | Current weather data courtesy of <a href="https://openweathermap.org" target="_blank">OpenWeatherMap.org</a> | <span id="currentdate">Placeholder</span>
     </section>
   </footer>
 <script src="js/currentdate.js"></script>
 <script src="js/hamburger.js"></script>
 <script src="js/towndata.js"></script>
+<script src="js/home-weather.js"></script>
 <script src="js/wayfind.js"></script>
 </body>
 </html>

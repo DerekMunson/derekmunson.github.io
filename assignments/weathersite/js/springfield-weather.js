@@ -36,6 +36,9 @@ weatherRequest.onload = function () {
     } else if (weatherData.weather[0].description === "thunderstorm") {
         let imagesrc = 'images/thunderstorms.svg';
         document.getElementById('weatherimage').src = imagesrc;
+    } else if (weatherData.weather[0].description === "thunderstorm with rain") {
+        let imagesrc = 'images/thunderstorms.svg';
+        document.getElementById('weatherimage').src = imagesrc;
     } else if (weatherData.weather[0].description === "rain") {
         let imagesrc = 'images/rainy.svg';
         document.getElementById('weatherimage').src = imagesrc;
@@ -80,7 +83,7 @@ weatherRequest.onload = function () {
         document.getElementById('windDirection').innerHTML = "West";
     } else if (windDir >= 293 && windDir <= 337 ) {
         document.getElementById('windDirection').innerHTML = "Northwest";
-    } else if (windDir >= 338 && windDir <= 359 ) {
+    } else if (windDir >= 338 && windDir <= 360 ) {
         document.getElementById('windDirection').innerHTML = "North";
     }
 
