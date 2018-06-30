@@ -24,6 +24,9 @@ weatherRequest.onload = function () {
     } else if (weatherData.weather[0].description === "broken clouds") {
         let imagesrc = 'images/cloudy.svg';
         document.getElementById('weatherimage').src = imagesrc;
+    } else if (weatherData.weather[0].description === "mist") {
+        let imagesrc = 'images/mist.svg';
+        document.getElementById('weatherimage').src = imagesrc;
     } else if (weatherData.weather[0].description === "few clouds") {
         let imagesrc = 'images/partly-cloudy.svg';
         document.getElementById('weatherimage').src = imagesrc;
