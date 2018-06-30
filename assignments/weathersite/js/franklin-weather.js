@@ -58,6 +58,28 @@ weatherRequest.onload = function () {
         let imagesrc = 'images/snow.svg';
         document.getElementById('weatherimage').src = imagesrc;
     }
+    
+// Set up wind direction   
+    var windDir = weatherData.wind.deg.toFixed(0);
+    if (windDir >= 0 && windDir <= 22 ) {
+        document.getElementById('windDirection').innerHTML = "North";
+    } else if (windDir >= 23 && windDir <= 67 ) {
+        document.getElementById('windDirection').innerHTML = "Northeast";
+    } else if (windDir >= 68 && windDir <= 112 ) {
+        document.getElementById('windDirection').innerHTML = "East";
+    } else if (windDir >= 113 && windDir <= 157 ) {
+        document.getElementById('windDirection').innerHTML = "Southeast";
+    } else if (windDir >= 158 && windDir <= 202 ) {
+        document.getElementById('windDirection').innerHTML = "South";
+    } else if (windDir >= 203 && windDir <= 247 ) {
+        document.getElementById('windDirection').innerHTML = "Southwest";
+    } else if (windDir >= 248 && windDir <= 292 ) {
+        document.getElementById('windDirection').innerHTML = "West";
+    } else if (windDir >= 293 && windDir <= 337 ) {
+        document.getElementById('windDirection').innerHTML = "Northwest";
+    } else if (windDir >= 338 && windDir <= 359 ) {
+        document.getElementById('windDirection').innerHTML = "North";
+    }
 
 // Determine wind chill factor
     
