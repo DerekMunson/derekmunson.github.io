@@ -52,6 +52,8 @@ nav {
     background:#1e5269;
 }
 nav button {
+    color: #1E5269;
+    background: transparent;
     padding: 10px 20px;
     font-size: 1.5em;
     border: none;
