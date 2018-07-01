@@ -52,8 +52,6 @@ nav {
     background:#1e5269;
 }
 nav button {
-    color: #1E5269;
-    background: transparent;
     padding: 10px 20px;
     font-size: 1.5em;
     border: none;
@@ -61,7 +59,6 @@ nav button {
     top: 35px;
     outline-style:none;
     box-shadow:none;
-    border-color:transparent;
 }
 nav ul {
     list-style-type: none; 
