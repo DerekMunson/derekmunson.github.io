@@ -1,0 +1,236 @@
+/*
+==============================
+GLOBAL ELEMENTS
+==============================
+*/
+
+* { box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html, body {
+    height:100%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    display:flex;
+    flex-direction: column;
+}
+
+.clearfix {clear:both;}
+
+.redbutton {padding:10px 20px; color:#fff; background:#B73B38; text-decoration: none; text-transform: capitalize; font-size:12px; font-family:'Montserrat', sans-serif; box-shadow:0 3px 10px rgba(0,0,0,0.4); transition: all .3s ease-in-out;}
+
+.redbutton:hover {background:#99322F; box-shadow:0 10px 20px rgba(0,0,0,0.4);}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin:30px 0;
+}
+
+/*
+==============================
+TYPOGRAPHY
+==============================
+*/
+
+h1, h2, h3, h4, h5, h6 {color:#B73B38;}
+p {margin:15px 0px; font-size:1.1em; line-height:1.2em;}
+
+h1{font-size:3em; line-height:1em;}
+h2{font-size:1.6em; line-height:1em;}
+h3{font-size:1.2em; line-height:1em;}
+h4{font-size:0.8em; line-height:1em;}
+
+
+.welcome {font-size:3em; line-height:1em; text-align:center;}
+
+/*
+==============================
+HEADER & NAV ELEMENTS
+==============================
+*/
+
+header-top, header, nav, main, footer {
+    max-width: 100%;
+    overflow:hidden;
+}
+
+header {
+    background:linear-gradient(#4d4d4d, #222222);
+    display:inline-block;
+    flex-shrink: 0;
+}
+
+.header-top {background:#99322F; line-height:30px; color:#fff; font-size:14px;}
+.header-top .centered, header .centered, footer .centered {margin:0 auto; max-width:960px; padding:0 0px;}
+.header-top {display:block;}
+.header-top .left-column {display:inline-block; float:left; text-align:left; padding-left:20px;}
+.header-top .right-column {display:inline-block; float:right;  text-align:right; padding-right:20px;}
+
+header .logo {
+    float: left;
+    width:220px;
+}
+header h1 {
+    position:absolute; 
+    left:-9999px;
+}
+header img {
+    width:100%;
+    padding:18px 0px;
+    text-align:left;
+}
+
+nav {float:right;}
+nav button {
+    color: #ccc;
+    background: transparent;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    border: none;
+    position: absolute;
+    top: 50px;
+    right:0;
+    outline-style:none;
+    box-shadow:none;
+}
+nav ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden;
+}
+nav ul li {
+    line-height:100px;
+}
+nav ul li a {
+    display: block;
+    color:rgba(255,255,255,1); 
+    text-decoration:none;  
+    font-size:1em;
+    padding:0em 1.2em;
+    transition: all .3s ease-in-out;
+    border-top:1px solid rgba(0,0,0,0.2);
+}
+
+nav ul li a:hover {background-color:rgba(255,255,255,0.15);}
+nav ul li.active a {background-color: rgba(0,0,0,0.2);}
+
+
+nav ul.hide {display:none;}
+
+
+/*
+==============================
+MAIN ELEMENTS
+==============================
+*/
+
+main .centered {margin:0 auto; max-width:960px; padding:0 20px 40px 20px;}
+main {background:#fff; flex: 1 0 auto;}
+
+main .hero {position:relative; width:100%; height:100%;}
+main .hero img {width:100%; height:100%; object-fit:cover;}
+
+main .cta {display:flex; justify-content: space-between; flex-direction:row; text-align:center; margin-bottom:40px;}
+main .cta .column {flex:1; flex-shrink:1; margin:6px; padding:20px; min-height:200px; background:#fff;}
+
+table {width:100%; text-align:center; border-collapse: collapse;}
+tr td img {width:32px; height:auto;}
+tr th {padding:15px 0px; font-weight:300; color:#6eb8d8;}
+th, td {border-left:1px solid #236683; padding: 10px 0px;}
+
+/*
+==============================
+SECONDARY PAGES
+==============================
+*/
+
+.secondary {display:flex; flex-direction:row;}
+.secondary .main-content {flex:2; padding:0 30px;}
+.secondary .sidebar {flex:1; background:#eaeaea; padding:30px; font-size:1em;}
+.secondary .sidebar p {font-size:1em;}
+.secondary img.left {float:left; margin:0 20px 20px 0;}
+.secondary img.right {float:right; margin:0 0 20px 20px;}
+
+.json-table {margin:20px 0px;}
+
+
+/*
+==============================
+JQUERY ELEMENTS
+==============================
+*/
+
+h3.ui-accordion-header {background:linear-gradient(#B73B38, #99322F); color:#fff; padding:10px; font-weight:300;}
+.ui-accordion-content {}
+.ui-accordion-content p {margin:0; padding:15px 0; font-size:1em;}
+
+.accordion .info-panel {display:inline-flex; flex-direction:row; height:100%; width:100%; background:#e5e5e5;}
+.accordion .image-panel {flex:1; padding:20px;}
+.accordion .bike-data {flex:1; padding:20px;}
+
+/*
+==============================
+FORM ELEMENTS
+==============================
+*/
+
+form {padding:0px 20px 0px 0px; margin: 0 auto;}
+form label.top, form div {display:block; padding:10px 0; font-weight:600;}
+form label.top input, form label.top select {display:block; padding:8px; width:100%; max-width:30rem; background:#fff; border-width:0px; border:none; border-radius:4px; height:44px;}
+form label.sidebyside {display:block; padding:10px 0;}
+form textarea {display:block; width:100%; max-width:30rem;}
+form input.submit {padding:10px 20px; color:#fff; background:#B73B38; text-decoration: none; text-transform: capitalize; font-size:12px; font-family:'Montserrat', sans-serif; transition: all .3s ease-in-out; border:none;}
+form input.submit:hover {background:#99322F; box-shadow:0 10px 20px rgba(0,0,0,0.4);}
+form label.top input:required {outline:none !important; border-bottom:2px solid #A00;}
+form label.top input:required:valid {outline:none !important; border-bottom:2px solid #097119;}
+
+/*
+==============================
+FOOTER ELEMENTS
+==============================
+*/
+
+footer {background:#B73B38; color:#fff; text-align:center; flex-shrink: 0;}
+footer .footer-top {display:flex; justify-content: center; align-items: center;}
+footer .footer-bottom {background:#99322F; padding:10px; font-size:11px; color:rgba(255,255,255,0.6);}
+footer .footer-col1, footer .footer-col2, footer .footer-col3 {padding:30px;}
+footer a {color:rgb(255, 96, 96);}
+footer a:hover {color:rgb(255,255,255,1);}
+
+/*
+==============================
+MEDIA QUERIES
+==============================
+*/
+
+@media all and (max-width:960px) {
+ 
+    main .cta, .secondary, .accordion .info-panel {flex-direction:column;}
+    
+}
+
+@media all and (max-width:768px) {
+    
+    header .logo {width:100%; text-align:center; margin-right:0; float:none; /*max-width:350px;*/}
+    header img {margin:0 auto; width:200px;}
+    nav {width:100%;}
+    nav ul li {line-height:45px;}
+    footer .footer-top {background:#B73B38; flex-direction:column;}
+    footer .footer-col1 {padding:30px 0px 0px;}
+    footer .footer-col2 {padding:3px;}
+    footer .footer-col3 {padding:0 0 30px 0;}
+    
+}
+
+@media all and (min-width:768px) {
+    
+    nav ul.hide {display:flex; flex-direction:row; float:right;}
+    nav button {display:none;}
+    footer .footer-col1, footer .footer-col2, footer .footer-col3 {padding:30px; flex:1;}
+}

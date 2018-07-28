@@ -1,0 +1,42 @@
+[
+  {
+    "service_name": "Premium Tune-Up",
+    "service_duration": "4 hours",
+    "service_cost": "$69.99"
+  },
+  {
+    "service_name": "Basic Tune-Up",
+    "service_duration": "1 hour",
+    "service_cost": "$39.99"
+  },
+  {
+    "service_name": "Handlebar & Seat Adjustment",
+    "service_duration": "15 minutes",
+    "service_cost": "$9.99"
+  },
+  {
+    "service_name": "Chain Repair",
+    "service_duration": "2-3 Hours",
+    "service_cost": "$49.99"
+  },
+  {
+    "service_name": "Chain Installation",
+    "service_duration": "15 minutes",
+    "service_cost": "$14.99"
+  },
+  {
+    "service_name": "Fix Flat Tire",
+    "service_duration": "30 minutes",
+    "service_cost": "$14.99"
+  },
+  {
+    "service_name": "Wheel Slime",
+    "service_duration": "10 minutes",
+    "service_cost": "$4.99"
+  },
+  {
+    "service_name": "Install Fork",
+    "service_duration": "3 hours",
+    "service_cost": "$34.99"
+  }
+]
